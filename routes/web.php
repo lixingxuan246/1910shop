@@ -14,4 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/user/reg', function () {
+    return view('reg');
+});
+
+
+Route::post('user/reg','RegController@index');
+Route::post('user/login','LoginController@index');
+Route::get('/user/login', function () {
+    return view('login');
+});
 //jjjjjjjj
