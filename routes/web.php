@@ -24,4 +24,8 @@ Route::post('user/login','LoginController@index');
 Route::get('/user/login', function () {
     return view('login');
 });
+
+Route::post('api/user/reg','Api\UserController@reg');
+Route::post('api/user/login','Api\UserController@login');
+
 //jjjjjjjj
